@@ -4,3 +4,6 @@ data/processed/
 
 # Model checkpoints
 models/*
+
+# Virtual Environment
+venv/
