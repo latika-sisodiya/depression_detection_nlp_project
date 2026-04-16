@@ -7,6 +7,9 @@ BASE_DIR = Path(__file__).resolve().parent
 # Reproducibility
 RANDOM_STATE = 42
 
+# Subset Size
+SUBSET_SIZE = 10000
+
 # Raw Data
 DATA_ROOT = BASE_DIR / "data" / "raw"
 RAW_CSV = DATA_ROOT / "Suicide_Detection.csv"
@@ -38,10 +41,15 @@ POSITIVE_CLASS = "suicide"
 TEST_SIZE = 0.20
 VAL_SIZE  = 0.50   
 
+# Dataset Subsampling 
+MAX_TRAIN_SAMPLES = 10000
+MAX_VAL_SAMPLES   = 2000
+USE_SUBSET = True
+
 # Transformer Hyperparameters
-MAX_LENGTH = 256
-NUM_EPOCHS = 5
-BATCH_SIZE = 16
+MAX_LENGTH = 128
+NUM_EPOCHS = 3
+BATCH_SIZE = 8
 LEARNING_RATE = 2e-5
 WEIGHT_DECAY = 0.01
 WARMUP_RATIO = 0.1
