@@ -19,7 +19,7 @@ PROCESSED_DIR = BASE_DIR / "data" / "processed"
 LABELLED_DATASET = str(PROCESSED_DIR / "labelled_dataset.csv")
 BEST_BASELINE_PKL = str(PROCESSED_DIR / "best_baseline.pkl")
 ROBERTA_PREDS_PKL = str(PROCESSED_DIR / "preds_roberta.pkl")
-MENTALBERT_PREDS_PKL = str(PROCESSED_DIR / "preds_mentalbert.pkl")
+TWITTERROBERTA_PREDS_PKL = str(PROCESSED_DIR / "preds_twitterroberta.pkl")
 DISTILROBERTA_PREDS_PKL = str(PROCESSED_DIR / "preds_distilroberta.pkl")
 
 # Results
@@ -27,7 +27,7 @@ PLOTS_DIR = BASE_DIR / "results" / "plots"
 METRICS_DIR = BASE_DIR / "results" / "metrics"
 BASELINE_RESULTS_CSV = str(METRICS_DIR / "baseline_results.csv")
 ROBERTA_RESULTS_CSV = str(METRICS_DIR / "roberta_results.csv")
-MENTALBERT_RESULTS_CSV = str(METRICS_DIR / "mentalbert_results.csv")
+TWITTERROBERTA_RESULTS_CSV = str(METRICS_DIR / "twitterroberta_results.csv")
 DISTILROBERTA_RESULTS_CSV = str(METRICS_DIR / "distilroberta_results.csv")
 ALL_RESULTS_CSV = str(METRICS_DIR / "all_models_results.csv")
 
@@ -58,12 +58,12 @@ EARLY_STOPPING_PATIENCE = 2
 # Model Directories
 MODELS_DIR = BASE_DIR / "models"
 ROBERTA_DIR = str(MODELS_DIR / "roberta")
-MENTALBERT_DIR = str(MODELS_DIR / "mentalbert")
+TWITTERROBERTA_DIR = str(MODELS_DIR / "twitterroberta")
 DISTILROBERTA_DIR = str(MODELS_DIR / "distilroberta")
 
 # HuggingFace Model IDs
 ROBERTA_MODEL_ID = "roberta-base"
-MENTALBERT_MODEL_ID = "mental/mental-bert-base-uncased"
+TWITTERROBERTA_MODEL_ID = "cardiffnlp/twitter-roberta-base-sentiment-latest"
 DISTILROBERTA_MODEL_ID = "distilroberta-base"
 
 # Linguistic Signal Configuration

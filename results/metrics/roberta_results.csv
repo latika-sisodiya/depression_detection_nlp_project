@@ -1,0 +1,4 @@
+Experiment,Accuracy,Precision,Recall,F1,ROC-AUC
+RoBERTa Baseline,0.97,0.9636,0.9763,0.9699,0.9969
+RoBERTa + Negation,0.9762,0.9782,0.9737,0.9759,0.9961
+RoBERTa + Negation + Intensifier,0.9717,0.9688,0.9742,0.9715,0.9967
