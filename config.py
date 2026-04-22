@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent
 RANDOM_STATE = 42
 
 # Subset Size
-SUBSET_SIZE = 10000
+SUBSET_SIZE = 20000
 
 # Raw Data
 DATA_ROOT = BASE_DIR / "data" / "raw"
@@ -23,13 +23,13 @@ TWITTERROBERTA_PREDS_PKL = str(PROCESSED_DIR / "preds_twitterroberta.pkl")
 DISTILROBERTA_PREDS_PKL = str(PROCESSED_DIR / "preds_distilroberta.pkl")
 
 # Results
-PLOTS_DIR = BASE_DIR / "results" / "plots"
-METRICS_DIR = BASE_DIR / "results" / "metrics"
-BASELINE_RESULTS_CSV = str(METRICS_DIR / "baseline_results.csv")
-ROBERTA_RESULTS_CSV = str(METRICS_DIR / "roberta_results.csv")
-TWITTERROBERTA_RESULTS_CSV = str(METRICS_DIR / "twitterroberta_results.csv")
-DISTILROBERTA_RESULTS_CSV = str(METRICS_DIR / "distilroberta_results.csv")
-ALL_RESULTS_CSV = str(METRICS_DIR / "all_models_results.csv")
+VISUALISATION_DIR = BASE_DIR / "results" / "visualisations"
+CSV_DIR = BASE_DIR / "results" / "csv"
+BASELINE_RESULTS_CSV = str(CSV_DIR / "baseline_results.csv")
+ROBERTA_RESULTS_CSV = str(CSV_DIR / "roberta_results.csv")
+TWITTERROBERTA_RESULTS_CSV = str(CSV_DIR / "twitterroberta_results.csv")
+DISTILROBERTA_RESULTS_CSV = str(CSV_DIR / "distilroberta_results.csv")
+ALL_RESULTS_CSV = str(CSV_DIR / "all_models_results.csv")
 
 # Label Definitions
 LABEL2ID = {"non-suicide": 0, "suicide": 1}
@@ -38,8 +38,8 @@ NUM_LABELS = 2
 POSITIVE_CLASS = "suicide"   
 
 # Data Splits
-TEST_SIZE = 0.20
-VAL_SIZE  = 0.50   
+TEST_SIZE = 0.15
+VAL_SIZE  = 0.176   
 
 # Dataset Subsampling 
 MAX_TRAIN_SAMPLES = 10000
@@ -85,13 +85,13 @@ INTENSIFIERS = [
 NEGATION_WINDOW = 5   
 
 # Early Detection Experiment
-EARLY_DETECTION_WINDOWS = [50, 100, 150]   
+EARLY_DETECTION_WINDOWS = [32, 64, 128]   
 
 # EDA Configuration 
 TOP_N_NGRAMS  = 20
 WORDCLOUD_MAX = 200
 
 # Create Output Directories\
-for _d in [PROCESSED_DIR, PLOTS_DIR, METRICS_DIR,
+for _d in [PROCESSED_DIR, VISUALISATION_DIR, CSV_DIR,
            MODELS_DIR, DATA_ROOT]:
     Path(_d).mkdir(parents=True, exist_ok=True)
