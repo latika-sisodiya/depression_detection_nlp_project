@@ -2,12 +2,12 @@ model,split,accuracy,precision,recall,f1,roc_auc,family,Experiment,Accuracy,Prec
 Logistic Regression,val,0.9170568561872908,0.930939226519337,0.9010695187165776,0.9157608695652174,0.9725331808517492,Baseline,,,,,,
 Linear SVM,val,0.9244147157190636,0.9302168021680216,0.9177807486631016,0.923956931359354,0.976398911152632,Baseline,,,,,,
 Random Forest,val,0.879933110367893,0.8907216494845361,0.8663101604278075,0.878346323280244,0.9422668391927784,Baseline,,,,,,
-,,,,,,,RoBERTa,RoBERTa Baseline,0.9826,0.9892,0.9759,0.9825,0.9975
-,,,,,,,RoBERTa,RoBERTa + Negation,0.9806,0.9787,0.9826,0.9807,0.9977
-,,,,,,,RoBERTa,RoBERTa + Negation + Intensifier,0.9803,0.9865,0.9739,0.9802,0.9969
-,,,,,,,TwitterRoBERTa,TwitterRoBERTa Baseline,0.9843,0.9892,0.9793,0.9842,0.9986
-,,,,,,,TwitterRoBERTa,TwitterRoBERTa + Negation,0.9819,0.9865,0.9773,0.9819,0.9982
-,,,,,,,TwitterRoBERTa,TwitterRoBERTa + Negation + Intensifier,0.986,0.9866,0.9853,0.986,0.9983
-,,,,,,,DistilRoBERTa,DistilRoBERTa Baseline,0.9779,0.9754,0.9806,0.978,0.9973
-,,,,,,,DistilRoBERTa,DistilRoBERTa + Negation,0.9779,0.9767,0.9793,0.978,0.9976
-,,,,,,,DistilRoBERTa,DistilRoBERTa + Negation + Intensifier,0.9759,0.974,0.9779,0.976,0.9971
+,,,,,,,RoBERTa,RoBERTa Baseline,0.9806,0.9852,0.9759,0.9805,0.9976
+,,,,,,,RoBERTa,RoBERTa + Negation,0.9806,0.9826,0.9786,0.9806,0.9974
+,,,,,,,RoBERTa,RoBERTa + Negation + Intensifier,0.9816,0.9858,0.9773,0.9815,0.9973
+,,,,,,,TwitterRoBERTa,TwitterRoBERTa Baseline,0.9816,0.9807,0.9826,0.9816,0.9986
+,,,,,,,TwitterRoBERTa,TwitterRoBERTa + Negation,0.9843,0.984,0.9846,0.9843,0.9985
+,,,,,,,TwitterRoBERTa,TwitterRoBERTa + Negation + Intensifier,0.9816,0.9826,0.9806,0.9816,0.9971
+,,,,,,,DistilRoBERTa,DistilRoBERTa Baseline,0.9799,0.9832,0.9766,0.9799,0.9977
+,,,,,,,DistilRoBERTa,DistilRoBERTa + Negation,0.9793,0.9799,0.9786,0.9793,0.9979
+,,,,,,,DistilRoBERTa,DistilRoBERTa + Negation + Intensifier,0.9793,0.9851,0.9733,0.9792,0.9971
