@@ -1,4 +1,4 @@
 Experiment,Accuracy,Precision,Recall,F1,ROC-AUC
-DistilRoBERTa Baseline,0.9779,0.9754,0.9806,0.978,0.9973
-DistilRoBERTa + Negation,0.9779,0.9767,0.9793,0.978,0.9976
-DistilRoBERTa + Negation + Intensifier,0.9759,0.974,0.9779,0.976,0.9971
+DistilRoBERTa Baseline,0.9795,0.9856,0.9733,0.9794,0.9973
+DistilRoBERTa + Negation,0.9784,0.9828,0.9739,0.9783,0.9973
+DistilRoBERTa + Negation + Intensifier,0.9778,0.9762,0.9795,0.9779,0.9975
